@@ -22,6 +22,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    background-color: var(--cor-principal);
+}
+
 header {
     position: fixed;
     display: flex;
@@ -31,6 +35,7 @@ header {
     height: 85px;
     background-color: var(--cor-principal);
     overflow: hidden;
+    z-index: 2;
 }
 
 #logo {
@@ -114,4 +119,64 @@ ul {
 #active-lang:hover {
     color: var(--cor-terciária);
     transition: all 0.4s ease;
+}
+
+#home {
+    color: var(--cor-letra);
+}
+
+#hero {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Images/Starter.png");
+    background-position: 0 80px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#hero-titles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+#hero-titles h1 {
+    font-size: 110px;
+}
+
+#hero-titles h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#hero-titles p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#hero-titles button {
+    background-color: var(--cor-principal);
+    color: var(--cor-letra);
+    border: 2px solid var(--cor-letra);
+    padding: 18px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#hero-titles button:hover {
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px 0 var(--cor-letra);
 }
