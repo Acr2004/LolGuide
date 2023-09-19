@@ -35,7 +35,7 @@ header {
     height: 85px;
     background-color: var(--cor-principal);
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
 }
 
 #logo {
@@ -57,7 +57,7 @@ header {
     width: 50%;
 }
 
-ul {
+#navbars ul {
     display: flex;
 }
 
@@ -123,6 +123,8 @@ ul {
 
 #home {
     color: var(--cor-letra);
+    width: 100vw;
+    height: 100vh;
 }
 
 #hero {
@@ -179,4 +181,55 @@ ul {
 #hero-titles button:hover {
     transition: all 0.4s ease;
     box-shadow: 0 0 10px 0 var(--cor-letra);
+}
+
+#champions {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    color: var(--cor-letra);
+    padding: 100px 0;
+}
+
+#champions h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+#champions ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#champions ul li {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+#champions ul li a {
+    width: 260px;
+    border-radius: 100%;
+}
+
+#champions ul li a img {
+    width: 260px;
+    border-radius: 100%;
+    border: 4px solid var(--cor-letra);
+    transition: all 0.4s ease;
+}
+
+#champions ul li a img:hover {
+    border: 4px solid var(--cor-secundária);
+    box-shadow: 0 0 10px 0 var(--cor-secundária);
+    transition: all 0.4s ease;
+}
+
+#champions span {
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 15px;
 }
