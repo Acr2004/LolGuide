@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor-principal: #24252A;
+    --cor-secundária: #2ea1ff;
+    --cor-terciária: #005f9e;
+    --cor-letra: #E9E9E9;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 85px;
+    background-color: var(--cor-principal);
+    overflow: hidden;
+}
+
+#logo {
+    margin-left: 20px;
+    height: 85px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+}
+
+#navbars {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+ul {
+    display: flex;
+}
+
+#nav-links {
+    margin-right: 20px;
+}
+
+.links {
+    padding: 0 20px;
+    height: 85px;
+    margin: 0 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--cor-letra);
+    font-weight: 500;
+    border-bottom: 5px solid var(--cor-principal);
+    transition: all 0.4s ease;
+}
+
+.links:hover {
+    border-bottom: 5px solid var(--cor-secundária);
+    transition: all 0.4s ease;
+}
+
+#active {
+    border-bottom: 5px solid var(--cor-secundária);
+    transition: all 0.4s ease;
+}
+
+#active:hover {
+    border-bottom: 5px solid var(--cor-terciária);
+    transition: all 0.4s ease;
+}
+
+.langs {
+    padding: 0 10px;
+    height: 85px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--cor-letra);
+    font-weight: 500;
+    border-bottom: 5px solid var(--cor-principal);
+    transition: all 0.4s ease;
+}
+
+.langs:hover {
+    color: var(--cor-secundária);
+    transition: all 0.4s ease;
+}
+
+#active-lang {
+    color: var(--cor-secundária);
+    transition: all 0.4s ease;
+}
+
+#active-lang:hover {
+    color: var(--cor-terciária);
+    transition: all 0.4s ease;
+}
